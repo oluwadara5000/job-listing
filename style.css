@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700;800;900&display=swap");
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "League Spartan", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+}
+
+section {
+  width: 1440px;
+  background-color: hsl(180, 52%, 96%);
+  margin: auto;
+}
+
+.filters {
+  background-color: hsl(180, 29%, 50%);
+  background-image: url(/images/bg-header-desktop.svg);
+}
+
+.container {
+  padding: 60px 165px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.listing {
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  cursor: pointer;
+}
+
+.listing-image {
+  margin-right: 25px;
+}
+
+.listing-writeup {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.listing-writeup p {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.tags {
+  display: flex;
+  margin-left: auto;
+  gap: 15px;
+}
+
+.tags p{
+padding: 9px;
+background-color: #ECF8F6;
+color: #5fa5a4;
+font-weight: 700;
+border-radius: 2px;
+}
+
+.tags p:hover{
+  background-color: #5fa5a4;
+  color: #ffffff;
+}
+
+.company {
+  color: #5fa5a4;
+  font-weight: 700;
+}
+
+.new {
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 15px;
+  background-color: #5fa5a4;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.featured {
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 15px;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h4:hover{
+  color: #5fa5a4;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: hsl(180, 8%, 52%);
+}
+
+.details {
+  color: hsl(180, 8%, 52%);
+}

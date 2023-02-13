@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://kit.fontawesome.com/1d29cd001d.js" crossorigin="anonymous"></script>
+
+  <title>Frontend Mentor | Job Listings</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="filters" id="filters">
+      <div>
+        <div>
+          <p>Frontend</p>
+          <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div>
+          <p>CSS</p>
+          <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div>
+          <p>Javascript</p>
+          <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+      <div>
+        <p>Clear</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="listing" data-role="frontend" data-level="senior" data-languages="html css javascript" data-tools="">
+        <div class="listing-image">
+          <img src="/images/photosnap.svg" alt="">
+        </div>
+        <div class="listing-writeup">
+          <p><span class="company">Photosnap</span> <span class="new">NEW!</span> <span class="featured">FEATURED</span>
+          </p>
+          <h4>Senior Frontend Developer</h4>
+          <p class="details"><span class="time">1d ago</span> <span class="dot"></span> <span class="period">Part
+              Time</span> <span class="dot"></span> <span class="location">USA only</span></p>
+        </div>
+        <div class="tags">
+          <p>Frontend</p>
+          <p>Senior</p>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JavaScript</p>
+        </div>
+      </div>
+
+      <div class="listing" data-role="fullstack" data-level="midweight" data-languages="python" data-tools="react">
+        <div class="listing-image">
+          <img src="/images/manage.svg" alt="">
+        </div>
+        <div class="listing-writeup">
+          <p><span class="company">Manage</span> <span class="new">NEW!</span> <span class="featured">FEATURED</span>
+          </p>
+          <h4>Fullstack Developer</h4>
+          <p class="details"><span class="time">1d ago</span> <span class="dot"></span> <span class="period">Part
+              Time</span> <span class="dot"></span> <span class="location">Remote</span></p>
+        </div>
+        <div class="tags">
+          <p>Fullstack</p>
+          <p>Midweight</p>
+          <p>Python</p>
+          <p>React</p>
+        </div>
+      </div>
+
+      <div class="listing" data-role="frontend" data-level="junior" data-languages="javascript" data-tools="react sass">
+        <div class="listing-image">
+          <img src="/images/account.svg" alt="">
+        </div>
+        <div class="listing-writeup">
+          <p><span class="company">Account</span> <span class="new">NEW!</span></p>
+          <h4>Junior Frontend Developer</h4>
+          <p class="details"><span class="time">2d ago</span> <span class="dot"></span> <span class="period">Part
+              Time</span> <span class="dot"></span> <span class="location">USA only</span></p>
+        </div>
+        <div class="tags">
+          <p>Frontend</p>
+          <p>Junior</p>
+          <p>React</p>
+          <p>Sass</p>
+          <p>JavaScript</p>
+        </div>
+      </div>
+
+      <div class="listing" data-role="frontend" data-level="junior" data-languages="css javascript" data-tools="">
+        <div class="listing-image">
+          <img src="/images/myhome.svg" alt="">
+        </div>
+        <div class="listing-writeup">
+          <p><span class="company">MyHome</span></p>
+          <h4>Junior Frontend Developer</h4>
+          <p class="details"><span class="time">5d ago</span> <span class="dot"></span> <span
+              class="period">Contract</span><span class="dot"></span> <span class="location">USA only</span></p>
+        </div>
+        <div class="tags">
+          <p>Frontend</p>
+          <p>Junior</p>
+          <p>CSS</p>
+          <p>JavaScript</p>
+        </div>
+      </div>
+
+      <div class="listing" data-role="fullstack" data-level="midweight" data-languages="javascript"
+        data-tools="sass ruby">
+        <div class="listing-image">
+          <img src="/images/loop-studios.svg" alt="">
+        </div>
+        <div class="listing-writeup">
+          <p><span class="company">Loop Studios</span></p>
+          <h4>Software Engineer</h4>
+          <p class="details"><span class="time">1w ago</span> <span class="dot"></span> <span class="period">Full
+              Time</span> <span class="dot"></span> <span class="location">Worldwide</span></p>
+        </div>
+        <div class="tags">
+          <p>Fullstack</p>
+          <p>Midweight</p>
+          <p>Sass</p>
+          <p>Ruby</p>
+          <p>JavaScript</p>
+        </div>
+      </div>
+
+      <div class="listing" data-role="backend" data-level="junior" data-languages="" data-tools="ruby ror">
+        <div class="listing-image">
+          <img src="/images/faceit.svg" alt="">
+        </div>
+        <div class="listing-writeup">
+          <p><span class="company">FaceIt</span></p>
+          <h4>Junior Backend Developer</h4>
+          <p class="details"><span class="time">2w ago</span> <span class="dot"></span> <span class="period">Full
+              Time</span> <span class="dot"></span> <span class="location">UK only</span></p>
+        </div>
+        <div class="tags">
+          <p>Backend</p>
+          <p>Junior</p>
+          <p>RoR</p>
+          <p>Ruby</p>
+        </div>
+      </div>
+
+      <div class="listing" data-role="frontend" data-level="junior" data-languages="html javascript" data-tools="sass">
+        <div class="listing-image">
+          <img src="/images/shortly.svg" alt="">
+        </div>
+        <div class="listing-writeup">
+          <p><span class="company">Shortly</span></p>
+          <h4>Junior Developer</h4>
+          <p class="details"><span class="time">2w ago</span> <span class="dot"></span> <span class="period">Full
+              Time</span> <span class="dot"></span> <span class="location">Worldwide</span></p>
+        </div>
+        <div class="tags">
+          <p>Frontend</p>
+          <p>Junior</p>
+          <p>Sass</p>
+          <p>HTML</p>
+          <p>JavaScript</p>
+        </div>
+      </div>
+
+      <div class="listing" data-role="frontend" data-level="junior" data-languages="javascript" data-tools="sass vue">
+        <div class="listing-image">
+          <img src="/images/insure.svg" alt="">
+        </div>
+        <div class="listing-writeup">
+          <p><span class="company">Insure</span></p>
+          <h4>Junior Frontend Developer</h4>
+          <p class="details"><span class="time">2w ago</span> <span class="dot"></span> <span class="period">Full
+              Time</span> <span class="dot"></span> <span class="location">USA only</span></p>
+        </div>
+        <div class="tags">
+          <p>Frontend</p>
+          <p>Junior</p>
+          <p>Sass</p>
+          <p>Vue</p>
+          <p>JavaScript</p>
+        </div>
+      </div>
+
+      <div class="listing" data-role="fullstack" data-level="midweight" data-languages="javascript python"
+        data-tools="django">
+        <div class="listing-image">
+          <img src="/images/eyecam-co.svg" alt="">
+        </div>
+        <div class="listing-writeup">
+          <p><span class="company">Eyecam Co.</span></p>
+          <h4>Fullstack Engineer</h4>
+          <p class="details"><span class="time">3w ago</span> <span class="dot"></span> <span class="period">Full
+              Time</span> <span class="dot"></span> <span class="location">Worldwide</span></p>
+        </div>
+        <div class="tags">
+          <p>Fullstack</p>
+          <p>Midweight</p>
+          <p>Django</p>
+          <p>Python</p>
+          <p>JavaScript</p>
+        </div>
+      </div>
+
+      <div class="listing" data-role="frontend" data-level="junior" data-languages="javascript" data-tools="sass react">
+        <div class="listing-image">
+          <img src="/images/the-air-filter-company.svg" alt="">
+        </div>
+        <div class="listing-writeup">
+          <p><span class="company">The Air Filter Company</span></p>
+          <h4>Front-End Dev</h4>
+          <p class="details"><span class="time">1mo ago</span> <span class="dot"></span> <span class="period">Part
+              Time</span> <span class="dot"></span> <span class="location">Worldwide</span></p>
+        </div>
+        <div class="tags">
+          <p>Frontend</p>
+          <p>Junior</p>
+          <p>Sass</p>
+          <p>React</p>
+          <p>JavaScript</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
