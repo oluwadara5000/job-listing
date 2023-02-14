@@ -22,9 +22,34 @@ section {
   margin: auto;
 }
 
-.filters {
+.filters-container {
   background-color: hsl(180, 29%, 50%);
   background-image: url(/images/bg-header-desktop.svg);
+}
+
+.filters{
+  display: flex;
+  background-color: #ffffff;
+  padding: 25px 35px;
+  gap: 20px;
+}
+
+.filters div{
+display: flex;
+background-color: #ECF8F6;
+color: #5fa5a4;
+font-weight: 700;
+padding: 10px;
+border-radius: 5px;
+align-items: center;
+}
+
+
+
+/* WORKING ON FILTER DIV IS WHERE YOU STOPPED OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+
+button{
+  background-color: red;
 }
 
 .container {
@@ -120,4 +145,20 @@ h4:hover{
 
 .details {
   color: hsl(180, 8%, 52%);
+}
+
+.frontend, .fullstack, .backend{
+  display: none;
+}
+
+.junior, .midweight, .senior{
+  display: none;
+}
+
+.python, .ruby, .javascript, .html, .css{
+  display: none;
+}
+
+.react, .sass, .vue, .django, .ror{
+  display: none;
 }

@@ -34,15 +34,50 @@
 
 <body>
   <section>
-    <div class="filters" id="filters">
-      <div>
+    <div class="filters-container" id="filters">
+      <div class="filters">
         <div>
           <p>Frontend</p>
           <button><i class="fa-solid fa-xmark"></i></button>
         </div>
 
         <div>
+          <p>Fullstack</p>
+          <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div>
+          <p>Backend</p>
+          <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div>
+          <p>Junior</p>
+          <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div>
+          <p>Midweight</p>
+          <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div>
+          <p>Senior</p>
+          <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <!-- <div>
           <p>CSS</p>
+          <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div>
+          <p>HTML</p>
+          <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div>
+          <p>Python</p>
           <button><i class="fa-solid fa-xmark"></i></button>
         </div>
 
@@ -50,13 +85,45 @@
           <p>Javascript</p>
           <button><i class="fa-solid fa-xmark"></i></button>
         </div>
-      </div>
-      <div>
-        <p>Clear</p>
+
+        <div>
+          <p>Ruby</p>
+          <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div>
+          <p>Sass</p>
+          <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div>
+          <p>Django</p>
+          <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div>
+          <p>Vue</p>
+          <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div>
+          <p>RoR</p>
+          <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div>
+          <p>React</p>
+          <button><i class="fa-solid fa-xmark"></i></button>
+        </div> -->
+
+        <div>
+          <p>Clear</p>
+        </div>
       </div>
     </div>
     <div class="container">
-      <div class="listing" data-role="frontend" data-level="senior" data-languages="html css javascript" data-tools="">
+
+      <div id="listing-I" class="listing" data-role="frontend" data-level="senior" data-languages="html css javascript" data-tools="">
         <div class="listing-image">
           <img src="/images/photosnap.svg" alt="">
         </div>
@@ -68,15 +135,15 @@
               Time</span> <span class="dot"></span> <span class="location">USA only</span></p>
         </div>
         <div class="tags">
-          <p>Frontend</p>
-          <p>Senior</p>
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>JavaScript</p>
+          <p onclick="frontendTag()" class="frontend-tag">Frontend</p>
+          <p onclick="seniorTag()" class="senior-tag">Senior</p>
+          <p onclick="htmlTag()" class="html-tag">HTML</p>
+          <p onclick="cssTag()" class="css-tag">CSS</p>
+          <p onclick="javascriptTag()" class="javascript-tag">JavaScript</p>
         </div>
       </div>
 
-      <div class="listing" data-role="fullstack" data-level="midweight" data-languages="python" data-tools="react">
+      <div id="listing-II" class="listing" data-role="fullstack" data-level="midweight" data-languages="python" data-tools="react">
         <div class="listing-image">
           <img src="/images/manage.svg" alt="">
         </div>
@@ -88,14 +155,14 @@
               Time</span> <span class="dot"></span> <span class="location">Remote</span></p>
         </div>
         <div class="tags">
-          <p>Fullstack</p>
-          <p>Midweight</p>
-          <p>Python</p>
-          <p>React</p>
+          <p onclick="fullstackTag()" class="fullstack-tag">Fullstack</p>
+          <p onclick="midweightTag()" class="midweight-tag">Midweight</p>
+          <p onclick="pythonTag()" class="python-tag">Python</p>
+          <p onclick="reactTag()" class="react-tag">React</p>
         </div>
       </div>
 
-      <div class="listing" data-role="frontend" data-level="junior" data-languages="javascript" data-tools="react sass">
+      <div id="listing-III" class="listing" data-role="frontend" data-level="junior" data-languages="javascript" data-tools="sass react">
         <div class="listing-image">
           <img src="/images/account.svg" alt="">
         </div>
@@ -106,15 +173,15 @@
               Time</span> <span class="dot"></span> <span class="location">USA only</span></p>
         </div>
         <div class="tags">
-          <p>Frontend</p>
-          <p>Junior</p>
-          <p>React</p>
-          <p>Sass</p>
-          <p>JavaScript</p>
+          <p onclick="frontendTag()" class="frontend-tag">Frontend</p>
+          <p onclick="juniorTag()" class="junior-tag">Junior</p>
+          <p onclick="reactTag()" class="react-tag">React</p>
+          <p onclick="sassTag()" class="sass-tag">Sass</p>
+          <p onclick="javascriptTag()" class="javascript-tag">JavaScript</p>
         </div>
       </div>
 
-      <div class="listing" data-role="frontend" data-level="junior" data-languages="css javascript" data-tools="">
+      <div id="listing-IV" class="listing" data-role="frontend" data-level="junior" data-languages="css javascript">
         <div class="listing-image">
           <img src="/images/myhome.svg" alt="">
         </div>
@@ -125,15 +192,14 @@
               class="period">Contract</span><span class="dot"></span> <span class="location">USA only</span></p>
         </div>
         <div class="tags">
-          <p>Frontend</p>
-          <p>Junior</p>
-          <p>CSS</p>
-          <p>JavaScript</p>
+          <p onclick="frontendTag()" class="frontend-tag">Frontend</p>
+          <p onclick="juniorTag()" class="junior-tag">Junior</p>
+          <p onclick="cssTag()" class="css-tag">CSS</p>
+          <p onclick="javascriptTag()" class="javascript-tag">JavaScript</p>
         </div>
       </div>
 
-      <div class="listing" data-role="fullstack" data-level="midweight" data-languages="javascript"
-        data-tools="sass ruby">
+      <div id="listing-V" class="listing" data-role="fullstack" data-level="midweight" data-languages="javascript" data-tools="sass ruby">
         <div class="listing-image">
           <img src="/images/loop-studios.svg" alt="">
         </div>
@@ -144,15 +210,15 @@
               Time</span> <span class="dot"></span> <span class="location">Worldwide</span></p>
         </div>
         <div class="tags">
-          <p>Fullstack</p>
-          <p>Midweight</p>
-          <p>Sass</p>
-          <p>Ruby</p>
-          <p>JavaScript</p>
+          <p onclick="fullstackTag()" class="fullstack-tag">Fullstack</p>
+          <p onclick="midweightTag()" class="midweight-tag">Midweight</p>
+          <p onclick="sassTag()" class="sass-tag">Sass</p>
+          <p onclick="rubyTag()" class="ruby-tag">Ruby</p>
+          <p onclick="javascriptTag()" class="javascript-tag">JavaScript</p>
         </div>
       </div>
 
-      <div class="listing" data-role="backend" data-level="junior" data-languages="" data-tools="ruby ror">
+      <div id="listing-VI" class="listing" data-role="backend" data-level="junior" data-languages="" data-tools="ror ruby">
         <div class="listing-image">
           <img src="/images/faceit.svg" alt="">
         </div>
@@ -163,14 +229,14 @@
               Time</span> <span class="dot"></span> <span class="location">UK only</span></p>
         </div>
         <div class="tags">
-          <p>Backend</p>
-          <p>Junior</p>
-          <p>RoR</p>
-          <p>Ruby</p>
+          <p onclick="backendTag()" class="backend-tag">Backend</p>
+          <p onclick="juniorTag()" class="junior-tag">Junior</p>
+          <p onclick="rorTag()" class="ror-tag">RoR</p>
+          <p onclick="rubyTag()" class="ruby-tag">Ruby</p>
         </div>
       </div>
 
-      <div class="listing" data-role="frontend" data-level="junior" data-languages="html javascript" data-tools="sass">
+      <div id="listing-VII" class="listing" data-role="frontend" data-level="junior" data-languages="html javascript" data-tools="sass">
         <div class="listing-image">
           <img src="/images/shortly.svg" alt="">
         </div>
@@ -181,15 +247,15 @@
               Time</span> <span class="dot"></span> <span class="location">Worldwide</span></p>
         </div>
         <div class="tags">
-          <p>Frontend</p>
-          <p>Junior</p>
-          <p>Sass</p>
-          <p>HTML</p>
-          <p>JavaScript</p>
+          <p onclick="frontendTag()" class="frontend-tag">Frontend</p>
+          <p onclick="juniorTag()" class="junior-tag">Junior</p>
+          <p onclick="sassTag()" class="sass-tag">Sass</p>
+          <p onclick="htmlTag()" class="html-tag">HTML</p>
+          <p onclick="javascriptTag()" class="javascript-tag">JavaScript</p>
         </div>
       </div>
 
-      <div class="listing" data-role="frontend" data-level="junior" data-languages="javascript" data-tools="sass vue">
+      <div id="listing-VIII" class="listing" data-role="frontend" data-level="junior" data-languages="javascript" data-tools="sass vue">
         <div class="listing-image">
           <img src="/images/insure.svg" alt="">
         </div>
@@ -200,16 +266,15 @@
               Time</span> <span class="dot"></span> <span class="location">USA only</span></p>
         </div>
         <div class="tags">
-          <p>Frontend</p>
-          <p>Junior</p>
-          <p>Sass</p>
-          <p>Vue</p>
-          <p>JavaScript</p>
+          <p onclick="frontendTag()" class="frontend-tag">Frontend</p>
+          <p onclick="juniorTag()" class="junior-tag">Junior</p>
+          <p onclick="sassTag()" class="sass-tag">Sass</p>
+          <p onclick="vueTag()" class="vue-tag">Vue</p>
+          <p onclick="javascriptTag()" class="javascript-tag">JavaScript</p>
         </div>
       </div>
 
-      <div class="listing" data-role="fullstack" data-level="midweight" data-languages="javascript python"
-        data-tools="django">
+      <div id="listing-IX" class="listing" data-role="fullstack" data-level="midweight" data-languages="python javascript" data-tools="django">
         <div class="listing-image">
           <img src="/images/eyecam-co.svg" alt="">
         </div>
@@ -220,15 +285,15 @@
               Time</span> <span class="dot"></span> <span class="location">Worldwide</span></p>
         </div>
         <div class="tags">
-          <p>Fullstack</p>
-          <p>Midweight</p>
-          <p>Django</p>
-          <p>Python</p>
-          <p>JavaScript</p>
+          <p onclick="fullstackTag()" class="fullstack-tag">Fullstack</p>
+          <p onclick="midweightTag()" class="midweight-tag">Midweight</p>
+          <p onclick="djangoTag()" class="django-tag">Django</p>
+          <p onclick="pythonTag()" class="python-tag">Python</p>
+          <p onclick="javascriptTag()" class="javascript-tag">JavaScript</p>
         </div>
       </div>
 
-      <div class="listing" data-role="frontend" data-level="junior" data-languages="javascript" data-tools="sass react">
+      <div id="listing-X" class="listing" data-role="frontend" data-level="junior" data-languages="javascript" data-tools="sass react">
         <div class="listing-image">
           <img src="/images/the-air-filter-company.svg" alt="">
         </div>
@@ -239,11 +304,11 @@
               Time</span> <span class="dot"></span> <span class="location">Worldwide</span></p>
         </div>
         <div class="tags">
-          <p>Frontend</p>
-          <p>Junior</p>
-          <p>Sass</p>
-          <p>React</p>
-          <p>JavaScript</p>
+          <p onclick="frontendTag()" class="frontend-tag">Frontend</p>
+          <p onclick="juniorTag()" class="junior-tag">Junior</p>
+          <p onclick="sassTag()" class="sass-tag">Sass</p>
+          <p onclick="reactTag()" class="react-tag">React</p>
+          <p onclick="javascriptTag()" class="javascript-tag">JavaScript</p>
         </div>
       </div>
     </div>
@@ -255,6 +320,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+  <script src="script.js"></script>
 </body>
 
 </html>
