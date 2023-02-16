@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700;800;900&display=swap");
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -23,53 +21,64 @@ section {
 }
 
 .filters-container {
-  background-color: hsl(180, 29%, 50%); 
+  background-color: hsl(180, 29%, 50%);
   background-image: url(/images/bg-header-desktop.svg);
   background-size: cover;
   padding: 90px 165px;
   cursor: pointer;
 }
 
-.filters{
+.filters {
   display: flex;
   background-color: #ffffff;
   padding: 25px 35px;
-  gap: 20px;
   border-radius: 7px;
   position: absolute;
   width: 1040px;
   top: 14%;
   display: none;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.filters div{
-display: flex;
-background-color: #ECF8F6;
-color: #5fa5a4;
-font-weight: 700;
-padding-left: 10px;
-border-radius: 5px;
-align-items: center;
-display: none;
+.data-filters {
+  display: flex;
+  gap: 20px;
 }
 
-#clear{
-  margin-left: auto;
+.data-filters div {
+  display: flex;
+  background-color: #ecf8f6;
+  color: #5fa5a4;
+  font-weight: 700;
+  padding-left: 10px;
+  border-radius: 5px;
+  align-items: center;
+  display: none;
+}
+
+#clear {
   padding: 0;
   background-color: #ffffff;
+  color: hsl(180, 8%, 52%);
+  font-weight: 700;
 }
 
-#clear:hover{
+#clear:hover {
   text-decoration: underline;
+  color: #5fa5a4;
 }
 
-.fa-xmark{
+.fa-xmark {
   font-size: 20px;
   color: #ffffff;
 }
 
+.listing:has(.featured) {
+  border-left: 5px solid #5fa5a4;
+}
 
-button{
+button {
   background-color: #5fa5a4;
   padding: 8px 12px;
   border: 0;
@@ -78,7 +87,7 @@ button{
   cursor: pointer;
 }
 
-button:hover{
+button:hover {
   background-color: hsl(180, 14%, 20%);
 }
 
@@ -97,6 +106,11 @@ button:hover{
   align-items: center;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   cursor: pointer;
+  transition: 0.1s ease-in;
+}
+
+.listing:hover {
+  box-shadow: 0 3px 10px 10px rgb(0 0 0 / 0.2);
 }
 
 .listing-image {
@@ -116,21 +130,25 @@ button:hover{
   text-align: center;
 }
 
+hr {
+  display: none;
+}
+
 .tags {
   display: flex;
   margin-left: auto;
   gap: 15px;
 }
 
-.tags p{
-padding: 9px;
-background-color: #ECF8F6;
-color: #5fa5a4;
-font-weight: 700;
-border-radius: 2px;
+.tags p {
+  padding: 9px;
+  background-color: #ecf8f6;
+  color: #5fa5a4;
+  font-weight: 700;
+  border-radius: 2px;
 }
 
-.tags p:hover{
+.tags p:hover {
   background-color: #5fa5a4;
   color: #ffffff;
 }
@@ -162,7 +180,7 @@ h4 {
   font-size: 22px;
 }
 
-h4:hover{
+h4:hover {
   color: #5fa5a4;
 }
 
@@ -177,18 +195,97 @@ h4:hover{
   color: hsl(180, 8%, 52%);
 }
 
-.frontend, .fullstack, .backend{
+.frontend,
+.fullstack,
+.backend {
   display: none;
 }
 
-.junior, .midweight, .senior{
+.junior,
+.midweight,
+.senior {
   display: none;
 }
 
-.python, .ruby, .javascript, .html, .css{
+.python,
+.ruby,
+.javascript,
+.html,
+.css {
   display: none;
 }
 
-.react, .sass, .vue, .django, .ror{
+.react,
+.sass,
+.vue,
+.django,
+.ror {
   display: none;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* MEDIA QUERIES */
+/* FOR SCREENS 374px and BELOW */
+@media screen and (max-width: 374px) {
+  section {
+    width: 100%;
+  }
+
+  .filters {
+    width: 70%;
+    left: 6%;
+  }
+
+  .data-filters {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 140px 0;
+    gap: 40px;
+  }
+
+  .listing {
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: start;
+    width: 280px;
+  }
+
+  .listing-image {
+    margin: 0;
+    width: 40%;
+    height: 40%;
+    margin-top: -40px;
+  }
+
+  .listing-image img {
+    width: inherit;
+  }
+
+  /* WHERE YOU STOPPED. TRY AND USE GRID ON THE TAGS DIV TO MAKE IT LOOK LIKE THE ORGINLA DESIGN */
+
+  .tags {
+  }
 }

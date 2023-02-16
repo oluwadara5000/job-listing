@@ -1,219 +1,3 @@
-// fetch("data.json")
-//   .then(function (response) {
-//     return response.json();
-//   })
-
-//   .then(function (data) {
-//     let placeholder = document.querySelector("#data-output");
-//     let out = "";
-//     for (let info of products) {
-//       out += `
-
-//       `;
-//     }
-//   })
-
-// const listingOne = document.getElementById("listing-I");
-// const listingTwo = document.getElementById("listing-II");
-// const listingThree = document.getElementById("listing-III");
-// const listingFour = document.getElementById("listing-IV");
-// const listingFive = document.getElementById("listing-V");
-// const listingSix = document.getElementById("listing-VI");
-// const listingSeven = document.getElementById("listing-VII");
-// const listingEight = document.getElementById("listing-VIII");
-// const listingNine = document.getElementById("listing-IX");
-// const listingTen = document.getElementById("listing-X");
-// const listing = document.querySelector(".listing");
-// const frontendTag = document.querySelector(".frontend-tag");
-// const fullstackTag = document.querySelector(".fullstack-tag");
-// const backendTag = document.querySelector(".backend-tag");
-// const juniorTag = document.querySelector(".junior-tag");
-// const midweightTag = document.querySelector(".midweight-tag");
-// const seniorTag = document.querySelector(".senior-tag");
-
-// frontendTag.addEventListener("click", function () {
-//   if (listing.dataset.role === "frontend") {
-//     listing.classList.add = "frontend"
-//   }
-// });
-
-// frontendTag.addEventListener("click", function () {
-// if (listingOne.classList.contains("fullstack") || listingOne.classList.contains("backend")) {
-//     listingOne.style.display = "none";
-//   }
-
-//   if (listingTwo.classList.contains("fullstack") || listingTwo.classList.contains("backend")) {
-//     listingTwo.style.display = "none";
-//   }
-
-//   if (listingThree.classList.contains("fullstack") || listingThree.classList.contains("backend")) {
-//     listingThree.style.display = "none";
-//   }
-
-//   if (listingFour.classList.contains("fullstack") || listingFour.classList.contains("backend")) {
-//     listingFour.style.display = "none";
-//   }
-
-//   if (listingFive.classList.contains("fullstack") || listingFive.classList.contains("backend")) {
-//     listingFive.style.display = "none";
-//   }
-
-//   if (listingSix.classList.contains("fullstack") || listingSix.classList.contains("backend")) {
-//     listingSix.style.display = "none";
-//   }
-
-//   if (listingSeven.classList.contains("fullstack") || listingSeven.classList.contains("backend")) {
-//     listingSeven.style.display = "none";
-//   }
-
-//   if (listingEight.classList.contains("fullstack") || listingEight.classList.contains("backend")) {
-//     listingEight.style.display = "none";
-//   }
-
-//   if (listingNine.classList.contains("fullstack") || listingNine.classList.contains("backend")) {
-//     listingNine.style.display = "none";
-//   }
-
-//   if (listingTen.classList.contains("fullstack") || listingTen.classList.contains("backend")) {
-//     listingTen.style.display = "none";
-//   }
-// });
-
-// fullstackTag.addEventListener("click", function () {
-//   if (listingOne.classList.contains("frontend") || listingOne.classList.contains("backend")) {
-//     listingOne.style.display = "none";
-//   }
-
-//   if (listingTwo.classList.contains("frontend") || listingTwo.classList.contains("backend")) {
-//     listingTwo.style.display = "none";
-//   }
-
-//   if (listingThree.classList.contains("frontend") || listingThree.classList.contains("backend")) {
-//     listingThree.style.display = "none";
-//   }
-
-//   if (listingFour.classList.contains("frontend") || listingFour.classList.contains("backend")) {
-//     listingFour.style.display = "none";
-//   }
-
-//   if (listingFive.classList.contains("frontend") || listingFive.classList.contains("backend")) {
-//     listingFive.style.display = "none";
-//   }
-
-//   if (listingSix.classList.contains("frontend") || listingSix.classList.contains("backend")) {
-//     listingSix.style.display = "none";
-//   }
-
-//   if (listingSeven.classList.contains("frontend") || listingSeven.classList.contains("backend")) {
-//     listingSeven.style.display = "none";
-//   }
-
-//   if (listingEight.classList.contains("frontend") || listingEight.classList.contains("backend")) {
-//     listingEight.style.display = "none";
-//   }
-
-//   if (listingNine.classList.contains("frontend") || listingNine.classList.contains("backend")) {
-//     listingNine.style.display = "none";
-//   }
-
-//   if (listingTen.classList.contains("frontend") || listingTen.classList.contains("backend")) {
-//     listingTen.style.display = "none";
-//   }
-// });
-
-// backendTag.addEventListener("click", function () {
-//   if (listingOne.classList.contains("frontend") || listingOne.classList.contains("fullstack")) {
-//     listingOne.style.display = "none";
-//   }
-
-//   if (listingTwo.classList.contains("frontend") || listingTwo.classList.contains("fullstack")) {
-//     listingTwo.style.display = "none";
-//   }
-
-//   if (listingThree.classList.contains("frontend") || listingThree.classList.contains("fullstack")) {
-//     listingThree.style.display = "none";
-//   }
-
-//   if (listingFour.classList.contains("frontend") || listingFour.classList.contains("fullstack")) {
-//     listingFour.style.display = "none";
-//   }
-
-//   if (listingFive.classList.contains("frontend") || listingFive.classList.contains("fullstack")) {
-//     listingFive.style.display = "none";
-//   }
-
-//   if (listingSix.classList.contains("frontend") || listingSix.classList.contains("fullstack")) {
-//     listingSix.style.display = "none";
-//   }
-
-//   if (listingSeven.classList.contains("frontend") || listingSeven.classList.contains("fullstack")) {
-//     listingSeven.style.display = "none";
-//   }
-
-//   if (listingEight.classList.contains("frontend") || listingEight.classList.contains("fullstack")) {
-//     listingEight.style.display = "none";
-//   }
-
-//   if (listingNine.classList.contains("frontend") || listingNine.classList.contains("fullstack")) {
-//     listingNine.style.display = "none";
-//   }
-
-//   if (listingTen.classList.contains("frontend") || listingTen.classList.contains("fullstack")) {
-//     listingTen.style.display = "none";
-//   }
-// });
-
-// juniorTag.addEventListener("click", function () {
-//   if (listingOne.classList.contains("midweight") || listingOne.classList.contains("senior")) {
-//     listingOne.style.display = "none";
-//   }
-
-//   if (listingTwo.classList.contains("midweight") || listingTwo.classList.contains("senior")) {
-//     listingTwo.style.display = "none";
-//   }
-
-//   if (listingThree.classList.contains("midweight") || listingThree.classList.contains("senior")) {
-//     listingThree.style.display = "none";
-//   }
-
-//   if (listingFour.classList.contains("midweight") || listingFour.classList.contains("senior")) {
-//     listingFour.style.display = "none";
-//   }
-
-//   if (listingFive.classList.contains("midweight") || listingFive.classList.contains("senior")) {
-//     listingFive.style.display = "none";
-//   }
-
-//   if (listingSix.classList.contains("midweight") || listingSix.classList.contains("senior")) {
-//     listingSix.style.display = "none";
-//   }
-
-//   if (listingSeven.classList.contains("midweight") || listingSeven.classList.contains("senior")) {
-//     listingSeven.style.display = "none";
-//   }
-
-//   if (listingEight.classList.contains("midweight") || listingEight.classList.contains("senior")) {
-//     listingEight.style.display = "none";
-//   }
-
-//   if (listingNine.classList.contains("midweight") || listingNine.classList.contains("senior")) {
-//     listingNine.style.display = "none";
-//   }
-
-//   if (listingTen.classList.contains("midweight") || listingTen.classList.contains("senior")) {
-//     listingTen.style.display = "none";
-//   }
-// });
-
-// const listing = document.querySelectorAll(".listing")
-// const frontendTag = document.querySelectorAll(".frontend-tag");
-
-// for (let i = 0; i < frontendTag.length; i++) {
-//   frontendTag[i].addEventListener("click", function () {
-//     listing[i].classList.toggle("red");
-//   });
-// }
-
 // THE DIVS HOUSING THE JOB LISTINGS
 const listingOne = document.getElementById("listing-I");
 const listingTwo = document.getElementById("listing-II");
@@ -529,16 +313,16 @@ midweightCancel.addEventListener("click", function () {
 });
 
 seniorCancel.addEventListener("click", function () {
-listingTwo.classList.remove("junior", "midweight");
-listingThree.classList.remove("junior", "midweight");
-listingFour.classList.remove("junior", "midweight");
-listingFive.classList.remove("junior", "midweight");
-listingSix.classList.remove("junior", "midweight");
-listingSeven.classList.remove("junior", "midweight");
-listingEight.classList.remove("junior", "midweight");
-listingNine.classList.remove("junior", "midweight");
-listingTen.classList.remove("junior", "midweight");
-document.getElementById("senior-filter").style.display = "none";
+  listingTwo.classList.remove("junior", "midweight");
+  listingThree.classList.remove("junior", "midweight");
+  listingFour.classList.remove("junior", "midweight");
+  listingFive.classList.remove("junior", "midweight");
+  listingSix.classList.remove("junior", "midweight");
+  listingSeven.classList.remove("junior", "midweight");
+  listingEight.classList.remove("junior", "midweight");
+  listingNine.classList.remove("junior", "midweight");
+  listingTen.classList.remove("junior", "midweight");
+  document.getElementById("senior-filter").style.display = "none";
 });
 
 pythonCancel.addEventListener("click", function () {
@@ -566,33 +350,33 @@ rubyCancel.addEventListener("click", function () {
 });
 
 javascriptCancel.addEventListener("click", function () {
- listingTwo.classList.remove("ruby", "python", "html", "css");
- listingSix.classList.remove("ruby", "python", "html", "css");
- document.getElementById("javascript-filter").style.display = "none";
+  listingTwo.classList.remove("ruby", "python", "html", "css");
+  listingSix.classList.remove("ruby", "python", "html", "css");
+  document.getElementById("javascript-filter").style.display = "none";
 });
 
 htmlCancel.addEventListener("click", function () {
-listingTwo.classList.remove("ruby", "javascript", "python", "css");
-listingThree.classList.remove("ruby", "javascript", "python", "css");
-listingFour.classList.remove("ruby", "javascript", "python", "css");
-listingFive.classList.remove("ruby", "javascript", "python", "css");
-listingSix.classList.remove("ruby", "javascript", "python", "css");
-listingEight.classList.remove("ruby", "javascript", "python", "css");
-listingNine.classList.remove("ruby", "javascript", "python", "css");
-listingTen.classList.remove("ruby", "javascript", "python", "css");
-document.getElementById("html-filter").style.display = "none";
+  listingTwo.classList.remove("ruby", "javascript", "python", "css");
+  listingThree.classList.remove("ruby", "javascript", "python", "css");
+  listingFour.classList.remove("ruby", "javascript", "python", "css");
+  listingFive.classList.remove("ruby", "javascript", "python", "css");
+  listingSix.classList.remove("ruby", "javascript", "python", "css");
+  listingEight.classList.remove("ruby", "javascript", "python", "css");
+  listingNine.classList.remove("ruby", "javascript", "python", "css");
+  listingTen.classList.remove("ruby", "javascript", "python", "css");
+  document.getElementById("html-filter").style.display = "none";
 });
 
 cssCancel.addEventListener("click", function () {
-listingTwo.classList.remove("ruby", "javascript", "html", "python");
-listingThree.classList.remove("ruby", "javascript", "html", "python");
-listingFive.classList.remove("ruby", "javascript", "html", "python");
-listingSix.classList.remove("ruby", "javascript", "html", "python");
-listingSeven.classList.remove("ruby", "javascript", "html", "python");
-listingEight.classList.remove("ruby", "javascript", "html", "python");
-listingNine.classList.remove("ruby", "javascript", "html", "python");
-listingTen.classList.remove("ruby", "javascript", "html", "python");
-document.getElementById("css-filter").style.display = "none";
+  listingTwo.classList.remove("ruby", "javascript", "html", "python");
+  listingThree.classList.remove("ruby", "javascript", "html", "python");
+  listingFive.classList.remove("ruby", "javascript", "html", "python");
+  listingSix.classList.remove("ruby", "javascript", "html", "python");
+  listingSeven.classList.remove("ruby", "javascript", "html", "python");
+  listingEight.classList.remove("ruby", "javascript", "html", "python");
+  listingNine.classList.remove("ruby", "javascript", "html", "python");
+  listingTen.classList.remove("ruby", "javascript", "html", "python");
+  document.getElementById("css-filter").style.display = "none";
 });
 
 reactCancel.addEventListener("click", function () {
@@ -607,12 +391,12 @@ reactCancel.addEventListener("click", function () {
 });
 
 sassCancel.addEventListener("click", function () {
-listingOne.classList.remove("react", "vue", "django", "ror");
-listingTwo.classList.remove("react", "vue", "django", "ror");
-listingFour.classList.remove("react", "vue", "django", "ror");
-listingSix.classList.remove("react", "vue", "django", "ror");
-listingNine.classList.remove("react", "vue", "django", "ror");
-document.getElementById("sass-filter").style.display = "none";
+  listingOne.classList.remove("react", "vue", "django", "ror");
+  listingTwo.classList.remove("react", "vue", "django", "ror");
+  listingFour.classList.remove("react", "vue", "django", "ror");
+  listingSix.classList.remove("react", "vue", "django", "ror");
+  listingNine.classList.remove("react", "vue", "django", "ror");
+  document.getElementById("sass-filter").style.display = "none";
 });
 
 vueCancel.addEventListener("click", function () {
@@ -642,19 +426,45 @@ djangoCancel.addEventListener("click", function () {
 });
 
 rorCancel.addEventListener("click", function () {
-listingOne.classList.remove("react", "sass", "vue", "django");
-listingTwo.classList.remove("react", "sass", "vue", "django");
-listingThree.classList.remove("react", "sass", "vue", "django");
-listingFour.classList.remove("react", "sass", "vue", "django");
-listingFive.classList.remove("react", "sass", "vue", "django");
-listingSeven.classList.remove("react", "sass", "vue", "django");
-listingEight.classList.remove("react", "sass", "vue", "django");
-listingNine.classList.remove("react", "sass", "vue", "django");
-listingTen.classList.remove("react", "sass", "vue", "django");
-document.getElementById("ror-filter").style.display = "none";
+  listingOne.classList.remove("react", "sass", "vue", "django");
+  listingTwo.classList.remove("react", "sass", "vue", "django");
+  listingThree.classList.remove("react", "sass", "vue", "django");
+  listingFour.classList.remove("react", "sass", "vue", "django");
+  listingFive.classList.remove("react", "sass", "vue", "django");
+  listingSeven.classList.remove("react", "sass", "vue", "django");
+  listingEight.classList.remove("react", "sass", "vue", "django");
+  listingNine.classList.remove("react", "sass", "vue", "django");
+  listingTen.classList.remove("react", "sass", "vue", "django");
+  document.getElementById("ror-filter").style.display = "none";
 });
 
 
-clear.addEventListener("click", function(){
+clear.addEventListener("click", function () {
   document.getElementById("filters").style.display = "none";
-})
+  document.getElementById("frontend-filter").style.display = "none";
+  document.getElementById("junior-filter").style.display = "none";
+  document.getElementById("fullstack-filter").style.display = "none";
+  document.getElementById("backend-filter").style.display = "none";
+  document.getElementById("midweight-filter").style.display = "none";
+  document.getElementById("senior-filter").style.display = "none";
+  document.getElementById("python-filter").style.display = "none";
+  document.getElementById("ruby-filter").style.display = "none";
+  document.getElementById("javascript-filter").style.display = "none";
+  document.getElementById("html-filter").style.display = "none";
+  document.getElementById("css-filter").style.display = "none";
+  document.getElementById("react-filter").style.display = "none";
+  document.getElementById("sass-filter").style.display = "none";
+  document.getElementById("vue-filter").style.display = "none";
+  document.getElementById("django-filter").style.display = "none";
+  document.getElementById("ror-filter").style.display = "none";
+  listingOne.classList.remove("frontend", "fullstack", "backend", "junior", "midweight", "senior", "html", "css", "javascript", "python", "ruby", "ror", "react", "sass", "vue", "django");
+  listingTwo.classList.remove("frontend", "fullstack", "backend", "junior", "midweight", "senior", "html", "css", "javascript", "python", "ruby", "ror", "react", "sass", "vue", "django");
+  listingThree.classList.remove("frontend", "fullstack", "backend", "junior", "midweight", "senior", "html", "css", "javascript", "python", "ruby", "ror", "react", "sass", "vue", "django");
+  listingFour.classList.remove("frontend", "fullstack", "backend", "junior", "midweight", "senior", "html", "css", "javascript", "python", "ruby", "ror", "react", "sass", "vue", "django");
+  listingFive.classList.remove("frontend", "fullstack", "backend", "junior", "midweight", "senior", "html", "css", "javascript", "python", "ruby", "ror", "react", "sass", "vue", "django");
+  listingSix.classList.remove("frontend", "fullstack", "backend", "junior", "midweight", "senior", "html", "css", "javascript", "python", "ruby", "ror", "react", "sass", "vue", "django");
+  listingSeven.classList.remove("frontend", "fullstack", "backend", "junior", "midweight", "senior", "html", "css", "javascript", "python", "ruby", "ror", "react", "sass", "vue", "django");
+  listingEight.classList.remove("frontend", "fullstack", "backend", "junior", "midweight", "senior", "html", "css", "javascript", "python", "ruby", "ror", "react", "sass", "vue", "django");
+  listingNine.classList.remove("frontend", "fullstack", "backend", "junior", "midweight", "senior", "html", "css", "javascript", "python", "ruby", "ror", "react", "sass", "vue", "django");
+  listingTen.classList.remove("frontend", "fullstack", "backend", "junior", "midweight", "senior", "html", "css", "javascript", "python", "ruby", "ror", "react", "sass", "vue", "django");
+});
