@@ -55,6 +55,7 @@ section {
   border-radius: 5px;
   align-items: center;
   display: none;
+  width: max-content;
 }
 
 #clear {
@@ -258,11 +259,14 @@ h4:hover {
   }
 
   .data-filters {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2px;
   }
 
   .container {
-    padding: 140px 0;
+    padding: 180px 0;
+    padding-bottom: 50px;
     gap: 40px;
   }
 
@@ -271,6 +275,7 @@ h4:hover {
     flex-direction: column;
     align-items: start;
     width: 280px;
+    margin: auto;
   }
 
   .listing-image {
@@ -284,8 +289,174 @@ h4:hover {
     width: inherit;
   }
 
-  /* WHERE YOU STOPPED. TRY AND USE GRID ON THE TAGS DIV TO MAKE IT LOOK LIKE THE ORGINLA DESIGN */
-
   .tags {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  hr {
+    width: 100%;
+    display: flex;
+    background-color: #bec0bf;
+    margin: 20px 0;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* FOR SCREENS FROM 375px TO 767px */
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  section {
+    width: 100%;
+  }
+
+  .filters {
+    width: 70%;
+    left: 0;
+    margin-left: 40px;
+  }
+
+  .data-filters {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .container {
+    padding: 180px 0;
+    padding-bottom: 50px;
+    gap: 40px;
+  }
+
+  .listing {
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: start;
+    width: 80%;
+    margin: auto;
+  }
+
+  hr {
+    width: 100%;
+    display: flex;
+    background-color: #bec0bf;
+    margin: 20px 0;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+@media screen and (min-width: 375px) and (max-width: 450px) {
+  .tags {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .listing-image {
+    margin: 0;
+    width: 40%;
+    height: 40%;
+    margin-top: -40px;
+  }
+
+  .listing-image img {
+    width: inherit;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+@media screen and (min-width: 451px) and (max-width: 570px) {
+  .tags {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .listing-image {
+    margin: 0;
+    width: 35%;
+    height: 35%;
+    margin-top: -40px;
+  }
+
+  .listing-image img {
+    width: inherit;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+@media screen and (min-width: 571px) and (max-width: 767px) {
+  .tags {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+  }
+
+  .listing-image {
+    margin: 0;
+    width: 35%;
+    height: 35%;
+    margin-top: -40px;
+  }
+
+  .listing-image img {
+    width: inherit;
   }
 }
