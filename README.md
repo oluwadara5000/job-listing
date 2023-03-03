@@ -58,5 +58,5 @@ listingFour.classList.remove("python", "javascript", "html", "css");
 
 ## Author
 
-- Website - [Odejobi Oluwadara](https://github.com/oluwadara5000/job-listing)
+- Website - [Odejobi Oluwadara](https://github.com/oluwadara5000)
 - Frontend Mentor - [@oluwadara5000](https://www.frontendmentor.io/profile/oluwadara5000)
